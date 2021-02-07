@@ -80,13 +80,10 @@ final String out = response.getOut(); // Executable output
 You may also specify a callback to get notified about the progress of the download:
 
 ```
-YoutubeDLResponse response = YoutubeDL.execute(request, new DownloadProgressCallback() {
-          @Override
-          public void onProgressUpdate(float progress, long etaInSeconds) {
-              System.out.println(String.valueOf(progress) + "%");
-          }
-      });
+YoutubeDLResponse response = YoutubeDL.execute(request, (progress, eta) -> {
+    System.out.println(progress + "%");
+ });
 ```
-> DownloadProgressCallback will be longer no supported by this project.
+> `DownloadProgressCallback` will be longer no supported by this project.
 
 [youtube-dl-options]: https://github.com/ytdl-org/youtube-dl#OPTIONS
