@@ -1,9 +1,9 @@
 # youtubedl-java [![](https://jitpack.io/v/zkingboos/youtubedl-java.svg)](https://jitpack.io/#zkingboos/youtubedl-java)
 
-A rewrite java wrapper for [youtube-dl](https://github.com/rg3/youtube-dl) executable with object orietation
+An sapher/youtubedl-java's fork with support for playlists, video search and bug fixes.
 
 ## Pre requisites
-You should have `youtube-dl` installed and available in your $PATH environment variable. You can also add your path dynamically.
+You must have `youtube-dl` installed and available in your $PATH environment variable. You can also add your path dynamically.
 
 [How to properly install YoutubeDL executable](https://rg3.github.io/youtube-dl/download.html)
 
@@ -84,6 +84,6 @@ YoutubeDLResponse response = YoutubeDL.execute(request, (progress, eta) -> {
     System.out.println(progress + "%");
  });
 ```
-> `DownloadProgressCallback` will be longer no supported by this project.
+> `DownloadProgressCallback` will be no longer supported by this project.
 
 [youtube-dl-options]: https://github.com/ytdl-org/youtube-dl#OPTIONS
